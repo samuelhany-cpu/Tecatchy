@@ -1,0 +1,269 @@
+@media all and (max-width :500px){
+    body{
+        color: #ff0000;
+    }
+}
+
+*{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'poppins';
+    scroll-behavior: smooth;
+    background-color: #f8f1e6;
+
+}
+header{
+    text-align: center;
+    padding: 10px;
+    font-family: 'cinzel decorative';
+}
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    flex: 3;
+
+}
+.main-content .product-img img{
+    width: 500px;
+    height: 500px;
+    float: left;
+    margin-left: 100px;
+}
+.details{
+    float: right;
+    margin-right: 100px;
+    border: 1px solid black;
+    padding: 40px;
+    border-radius: 10px;
+    height: 50%;
+    margin-top: 100px;
+}
+.main-content .details .active-ing{
+    display: block;
+
+}
+.wrapper{
+    height: 50px;
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    background: #9cd0be;
+    justify-content: center;
+    border-radius: 12px;
+}
+.wrapper span{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+.wrapper span.num{
+    font-size: 15px;
+}
+.wrapper span.plus{
+    cursor: pointer;
+}
+.wrapper span.minus{
+    cursor: pointer;
+}
+button{
+    background: #9cd0be;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+button:hover{
+    background: #ffd000;
+    color: white;
+}
+.product-info{
+    padding: 20px;
+    width: 40%;
+    margin-top: 10px;
+}
+.product-info h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.product-info p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.product-info .price{
+    color: #ff0000;
+    font-size: 25px;
+    font-weight: 600;
+}
+.product-info .desc{
+    font-size: 18px;
+    font-weight: 500;
+}
+.product-info .active-ing li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.product-info .side-effects li{
+    font-size: 18px;
+    font-weight: 500;
+}
+.product-info .side-effects{
+    margin-top: 20px;
+}
+.product-info .side-h3{
+    color: #ff0000;
+}
+.product-info .precautions {
+    color: #ff0000;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+.card{
+    background-color: #f8f1e6;
+    width: 400px;
+    padding: 22px 30px;
+    border-radius: 5px;
+    line-height: 1.8;
+}
+#ch{
+    display: none;
+}
+label{
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #9cd0be;
+    padding: 3px 13px;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+.content{
+    display: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+#ch:checked ~ .content{
+    display: block;
+}
+#ch:checked ~ label{
+    display: none;
+}
+#ch1{
+    display: none;
+}
+#ch1:checked ~ .content{
+    display: block;
+}
+#ch1:checked ~ label{
+    display: none;
+}
+#ch2{
+    display: none;
+}
+#ch2:checked ~ .content{
+    display: block;
+}
+#ch2:checked ~ label{
+    display: none;
+}
+.slideshow-container {
+    min-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+hr{
+    background-color: black;  
+    border: none;
+    height: 1px;  
+
+}
