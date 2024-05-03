@@ -1,8 +1,3 @@
-@media all and (max-width :500px){
-    body{
-        color: #ff0000;
-    }
-}
 
 *{
     scroll-behavior: smooth;
@@ -178,7 +173,7 @@ label{
     display: none;
 }
 .slideshow-container {
-    min-width: 1000px;
+    min-width: 100px;
     position: relative;
     margin: auto;
 }
@@ -196,7 +191,7 @@ label{
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: black;
+    color: red;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
