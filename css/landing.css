@@ -256,31 +256,29 @@ label{
     from {opacity: .4}
     to {opacity: 1}
 }
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'poppins';
+
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    list-style:none;
+}
+.socials li a {
+    margin: 10px;
+}
+.footer-bottom{
+    font-family: 'poppins';
+    text-align: center;
+    padding: 10px;
+}
 hr{
     background-color: black;  
     border: none;
     height: 1px;  
 
-}
-@media screen and (max-width:700px) {
-    .main-content{
-        flex-direction: column;
-        align-items: center;
-    }
-    .details{
-        position: relative;
-        width: 75%;
-        left: 5rem;
-    }
-}
-@media screen and (max-width:500px) {
-    .main-content{
-        flex-direction: column;
-        align-items: center;
-    }
-    .details{
-        position: relative;
-        width: 75%;
-        left: 5rem;
-    }
 }
